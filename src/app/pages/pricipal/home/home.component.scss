@@ -1,0 +1,198 @@
+$fondo : #f2f2f2;
+$azul-primario : #5f6ad4;
+$azul-secundario: #7780da;
+$gris-oscuro  : #3b3b3b;
+$gris-claro : #909090;
+$texto : #292929;
+$verde : #48b04d;
+$font-family : "Open Sans", Sans-serif;
+$font-family2: "Oswald",Sans-serif;
+$font-size : 16px;
+
+
+header{
+    .logo{
+        padding-top:  1.25em;
+        padding-bottom: 1.25em;
+        a{
+            display: inline-block;
+        }
+
+    }
+    .redes-sociales{
+        text-align: right;
+        line-height: 5em;
+        a{
+          border-radius: 50%;
+          width: 2.5em;
+          height: 2.5em;
+          text-align: center;
+          line-height: 2.5em;
+          display: inline-block;
+          background: navy;
+          color: white;
+          margin-left: 1.25em;
+
+          &.y{
+            background: #c05554;
+          }
+          &.f{
+               background: #3b5998;
+          }
+          &.i{
+               background: #55acee;
+          }
+        }
+    }
+    .menu{
+         background: $azul-primario;
+         margin-bottom: 1.25em;
+         ul{
+           list-style: none;
+           margin-bottom: 0;
+          padding: 1em 1em;
+
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           flex-wrap: wrap;
+            li{
+              
+                a{
+                    color: white;
+                     padding: 1em 1.25em;
+                     font-size: 0.87em;
+                    &:hover{
+                       background: $azul-secundario ;
+                       text-decoration: none;
+                    }     
+              }
+
+            }
+         }   
+    }
+}
+
+
+
+/*=============================================
+=            parte del footer            =
+=============================================*/
+
+footer{
+    .menu{
+        background: $azul-primario;
+        ul{
+           list-style: none;
+           margin-bottom: 0;
+          padding: 1em 1em;
+
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           flex-wrap: wrap;
+            li{
+                a{
+                    color: white;
+                     padding: 1em 1.25em;
+                     font-size: 0.87em;
+                    &:hover{
+                       background: $azul-secundario ;
+                       text-decoration: none;
+                    }     
+              }
+
+            }
+         }  
+    }
+    .copyright{
+         p{
+            font-size: 1em;
+            color: black;
+            padding: 0.625em;
+            text-align: center;
+         }
+    }
+}
+
+/* estilos para los titulos de seccion */
+
+.main,
+.sidebar{
+      .titulo-seccion{
+           h3{
+             font-family: $font-family2;
+             font-size: 1.5em;
+             line-height: 1.5em;
+             font-weight: no curo;
+             padding-bottom:  0.62em;
+             border-bottom: 4px solid $verde;
+             margin-bottom: 1.25em;
+             padding-top: 1.25em;
+           }
+      }
+}
+
+
+/*=============================================
+=            estilos del sidebar            =
+=============================================*/
+
+
+.sidebar{
+    
+    .widget{
+      margin-bottom:  2.5em;
+       &.redes-sociales {
+
+         a{
+            width: 33.33333%;
+          
+            padding: 1.25em;
+            text-align: center;
+             margin-top: 20px;
+            background: #000;
+            color: white;
+            &:hover{
+               text-decoration: none;
+
+            }
+            &.y{
+                 background: red;
+            }
+            &.f{
+                background: skyblue;
+            }
+            &.i{
+                background: blue ;
+            }
+            
+         }
+       }
+       &.boletin{
+         .formulario{
+             background: black;
+             padding: 1.25em; 
+             text-align: center;
+              label{
+                 color: white;
+                 margin-bottom: 1.25em;
+                 display: block;
+                 font-weight: normal;
+              }
+              input[type="email"]{
+                   color: $gris-claro;
+                   text-align: center;
+                 padding: 0.65em;
+                 font-size: 1.12em;
+                 border-radius: 3px;
+                 width: 100%;
+                 border: none;
+                 margin-bottom: 1.25em;
+              }
+            
+         }
+       }
+    
+    }
+}

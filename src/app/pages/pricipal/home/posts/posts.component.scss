@@ -1,0 +1,125 @@
+$fondo : #f2f2f2;
+$azul-primario : #5f6ad4;
+$azul-secundario: #7780da;
+$gris-oscuro  : #3b3b3b;
+$gris-claro : #909090;
+$texto : #292929;
+$verde : #48b04d;
+$font-family : "Open Sans", Sans-serif;
+$font-family2: "Oswald",Sans-serif;
+$font-size : 16px;
+
+
+.main{
+      .titulo-seccion{
+           h3{
+             font-family: $font-family2;
+             font-size: 1.5em;
+             line-height: 1.5em;
+             font-weight: no curo;
+             padding-bottom:  0.62em;
+             border-bottom: 4px solid $verde;
+             margin-bottom: 1.25em;
+             padding-top: 1.25em;
+           }
+      }
+}
+
+
+/*=============================================
+=           estilos para los posts            =
+=============================================*/
+
+.main{
+    .titulo-seccion{
+         > div{
+             padding: 0;
+         }
+    }
+    .posts{
+     
+         .post{
+            margin-bottom: 1.875em;
+          .contenedor{
+            background: white;
+            -webkit-box-shadow : 0px 0px 5px  rgba(0, 0 ,0 ,0.3);
+             box-shadow: 0px 0px 5px 0px rgba(0, 0 ,0 ,0.3);
+             .thumb{
+                 img{
+                      width:  100%;
+                     vertical-align: top;
+                     height: auto ;
+                 }
+             }
+             .info{
+                 padding:  1.25em;
+                  .titulo{
+                    line-height: 1.125em;
+                    margin-bottom: 1.25em;
+                    font-size: 1.125em;
+                    a{
+                        font-weight: 600;
+                         color: $gris-oscuro;
+                    }
+                  }
+                  .fecha{
+                    color: $gris-claro;
+                    font-size: 0.875em;
+                    margin-bottom: 1.125em;
+                  }
+                  .extracto{
+                       color: $texto;
+                       font-size: 1em ;
+                       //es necesario poner un tamaño de alto
+                       //para que la tarjeta no crezca respecto al 
+                       //contenido
+                       height: 8.125em; 
+                       max-height: 8.125em; 
+                       line-height: 1.75em;
+                       overflow: hidden;
+                       &:hover {
+                            overflow: auto;
+                       }
+                  }
+               }
+          }
+         }
+    }
+    .paginacion{
+       
+         ul{
+             list-style: none;
+             overflow: hidden;
+             margin-bottom: 1.25em;
+             font-size: 1em;
+             li{
+                 float: left;
+                background: $gris-oscuro;
+                color: white;
+                margin-right: 0.62em;
+                font-size: 1.125em;
+                line-height: 1.125em;
+                &.disabled {
+                     padding: 0.62em  0.937em;
+                     font-size: 1.125em;
+                     line-height: 1.125em;
+
+                }
+                a{
+                    background: $azul-primario;
+                    color: white;
+                    line-height: 1.125em;
+                    display: inline-block;
+                    padding: 0.62em  0.937em;  
+                    &:hover{
+                         background: $azul-primario;
+                         text-decoration: none;
+                    }
+
+                }
+             }
+         }
+    }
+} 
+
+

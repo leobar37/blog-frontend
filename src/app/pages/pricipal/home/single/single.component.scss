@@ -1,0 +1,36 @@
+$fondo : #f2f2f2;
+$azul-primario : #5f6ad4;
+$azul-secundario: #7780da;
+$gris-oscuro  : #3b3b3b;
+$gris-claro : #909090;
+$texto : #292929;
+$verde : #48b04d;
+$font-family : "Open Sans", Sans-serif;
+$font-family2: "Oswald",Sans-serif;
+$font-size : 16px;
+
+.post{
+ padding-top: 2em;
+ .titulo{
+   text-align: center;
+   font-weight: 400;
+   padding:  15px 0px;
+   font-family: $font-family2;
+ }
+ .fecha{
+    color: $gris-claro;
+    font-size: 1em;
+    padding-top: 1.5em;
+  }
+  
+  .texto{
+    padding: 1.25em 1em;
+    
+    .parrafo{
+     font-family: $font-family;
+     font-size: 1em;
+     line-height: 2em;
+    }
+  }
+
+}

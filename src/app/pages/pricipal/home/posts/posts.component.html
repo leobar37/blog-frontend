@@ -1,0 +1,48 @@
+<div class="main">
+    <div class="row titulo-seccion">
+         <div class="col-md-12">
+              <h3>Lo mas reciente</h3>
+         </div>
+    </div>
+    <!-- parte de los posts -->
+    <div class="row posts">
+        <article class="col-md-6 post" 
+           *ngFor="let post of posts">
+            <div class="contenedor">
+               <div class="thumb">
+              <a [routerLink]="['/home','post']" >
+                 <img [src]="post.images[0]" width="700" alt="">
+              </a>
+               </div> 
+                <div class="info">
+                     <h2 class="titulo">
+                        <a [routerLink]="['/home','post']">{{post.title}}</a>
+                     </h2>
+                     <p class="fecha">
+                         {{post.date}}
+                     </p>
+                     <p class="extracto">
+                        {{post.extracto}}
+                     </p>
+                </div>
+                <div class="categorias">
+                    <a href="" class=""></a>
+                    <a href="" class=""></a>
+                </div>
+            </div>
+          </article>  
+    </div>
+     <div class="row paginacion">
+        <div class="col-md-12">
+            <ul>
+                <li class="disabled">Pagina 1 de 6</li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                 <li><a href="">Ultima >></a></li>
+            </ul>
+        </div>
+    </div>
+     </div>

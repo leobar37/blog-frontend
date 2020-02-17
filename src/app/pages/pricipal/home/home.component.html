@@ -1,0 +1,132 @@
+
+<!-- parte - header -->
+<header>
+    <div class="container">
+        <div class="row">
+             <div class="logo col-12 col-sm-6">
+             <a [routerLink]="['/home']"  ><img src="assets/img/logo.png" alt=""></a>
+             </div>
+             <div class="redes-sociales col-12 col-sm-6">
+                 <a class="y" href=""><i class="fab fa-facebook"></i></a>
+                 <a class="f" href=""><i class="fab fa-youtube"></i></a>
+                 <a class="i" href=""><i class="fab fa-instagram"></i></a>
+             </div> 
+        </div>       
+   </div>
+    <nav class="menu">
+      <div class="container">
+           <div class="row">
+                <ul class="col-md-12">
+                    <li>
+                        <a href="">Html</a>
+                    </li>
+                    <li>
+                        <a href="">css</a>
+                    </li>
+                    <li>
+                        <a href="">otros</a>
+                    </li>
+                </ul>
+           </div>
+      </div>
+    </nav>
+    <div class="container hidden-sm">
+         <div class="row">
+             <div class= "col-md-12">
+                <div class="text-center">
+                    <img src="assets/img/ad.jpg" alt="">
+                </div>
+             </div>
+         </div>
+    </div>
+ </header>
+<!-- fin header -->
+ 
+<!-- main y sidebar -->
+<div class="container">
+    <div class="row">
+       <!-- posts and single posts -->
+        <div class="col-md-8">
+            <router-outlet></router-outlet>
+        </div>   
+      
+    
+       <!-- fin posts and single posts -->
+       
+       <!-- sidebar -->
+       <aside class="sidebar col-md-4">
+        <div class="widget redes-sociales">
+            <div class="titulo-seccion">
+                <h3>Siguenos</h3>
+                <div class="redes-sociales">
+                    <a class="y" href=""><i class="fab fa-facebook"></i>
+                    <span>100k</span>
+                </a>
+                    <a class="f" href=""><i class="fab fa-youtube"></i>
+                    <span>100k</span>
+                </a>
+                    <a class="i" href=""><i class="fab fa-instagram"></i>
+                    <span>100k</span>
+                </a>
+                
+                </div>
+                <div class="widget boletin">
+                    <h3>Suscribete</h3>
+                    <form class="formulario" action="">
+                        <label for="email">Suscribete a nuestro boletin</label>
+                        <input type="email" id="email" placeholder="Correo Electronico" required>
+                        <input type="submit" class="btn btn-danger" value="Enviar">
+                    </form>
+                </div>
+                <div class="widget ad">
+                    <div class="contenedor-ad">
+                      
+                             <img class="card-img-top" src="assets/img/ad2.jpg" alt="">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+     </aside>
+       <!-- fin del sidebar -->
+
+    
+    </div>
+</div>
+
+
+<!-- fin main y sidebar -->
+
+<!-- footer -->
+<footer>
+      
+    <div class="container hidden-xs ad">
+        <a href="">
+            <img src="img/ad.jpg" alt="">
+        </a>
+    </div>
+<nav class="menu">
+    <div class="container">
+         <div class="row">
+              <div class="col-md-12">
+                 <ul>
+                     <li><a href="">Inicio</a></li>
+                     <li><a href="">Acerca De</a></li>
+                     <li><a href="">Terminos y condiciones</a></li>
+                 </ul>  
+              </div>
+         </div>
+    </div>
+</nav>
+<div class="copyright">
+    <div class="container">
+         <div class="row">
+             <div class="col-md-12">
+                <p>Sitio creado  por Leobar37</p>
+             </div>
+         </div>
+    </div>
+</div>
+</footer>
+
+<!-- fin footer -->

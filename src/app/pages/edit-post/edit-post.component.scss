@@ -1,0 +1,106 @@
+// estilos generales
+$fondo : #f2f2f2;
+$azul-primario : #5f6ad4;
+$azul-secundario: #7780da;
+$gris-oscuro  : #3b3b3b;
+$gris-claro : #909090;
+$texto : #292929;
+$verde : #48b04d;
+
+$font-family : "Open Sans", Sans-serif;
+$font-family2: "Oswald",Sans-serif;
+$font-size : 16px;
+
+
+    
+    .body{
+         font-size:  $font-size;
+         font-family: $font-family;
+         background:  $fondo;
+    }
+    
+// @import "footer";
+// @import "header";
+// @import "main";
+
+
+// estilos del header y main 
+.main {
+    font-family: $font-family2;
+   margin-top: 1.25em;
+   padding-bottom: 4em;
+   
+   .contenedor{
+     
+     .imagen {
+       text-align: center;
+       width: 100%;
+       img {
+         vertical-align: top;
+         width: 70%;
+       }
+     }
+     .controlF{
+        padding-top:2em;
+       .titulo{
+           font-family: $font-family2;
+          text-align: center;
+           padding: 0.6em 1.2em;
+          font-size:  1.5em;
+          &.iz{
+             text-align: left;
+          }
+       }
+       .text{
+          width: 43.75em;
+          height: 25em;
+          border: 3px solid #cccccc;
+          padding: 5px;
+          font-family: $font-family;
+          
+          background-position: bottom right;
+          background-repeat: no-repeat;
+       }
+     }
+   }
+ }
+ 
+ //**parte del sidebar 
+ 
+ .sidebar{
+    background: white;
+        
+     .item{
+          background: #4392F1;
+          margin: 0.625em 0.5em;
+          border-radius: 5px;
+          padding: 0.625em ;
+          -moz-box-shadow:    3px 3px 3px 6px rgba(255, 255, 255, .4);;
+          -webkit-box-shadow: 3px 3px 3px 6px rgba(255, 255, 255, .4);;
+          box-shadow:         3px 3px 3px 6px rgba(255, 255, 255, .4);;
+        
+          a{
+             color: #C1F7DC;
+             font-family: $font-family2;
+             font-size: 1.4em;
+             text-align: center;
+          }
+     }
+     .widgets{
+         .ultimosPost{
+            .titulo{
+               text-align: center;
+               font-size: 1.5em;
+               font-family: $font-family2;
+               padding-bottom: 0.7em;
+            }
+ 
+            .fila{
+             td{
+               font-size: 0.8em;
+             }
+ 
+            }
+         }
+     }
+ }
