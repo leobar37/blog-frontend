@@ -29,9 +29,7 @@ export class PostsComponent implements OnInit {
             this.posts.push(post);
           }
          }
-         console.log('------los nuevos posts');
-         
-         console.log(this.posts);
+        
          
       })
   }

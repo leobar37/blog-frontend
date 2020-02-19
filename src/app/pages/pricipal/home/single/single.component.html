@@ -1,14 +1,17 @@
 <article class="post">
     <div class="contenedor">
         <h2 class="titulo">
-            Titulo del  post: Lorem ipsum dolor sit amet.
-            Lorem, ipsum.
+            {{postSingle.title}}
          </h2>
         <div class="thumb">
-            <img class="img-thumbnail" src="assets/img/1.jpg" width="700" alt="">
+            <img class="img-thumbnail" [src]="postSingle.images[0]" width="700" alt="">
        </div> 
         <div class="texto">
             <p class="parrafo">
+               {{postSingle.body}}
+            </p>
+            
+            <!-- <p class="parrafo">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -36,22 +39,12 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
-            
-            <p class="parrafo">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </p>
+            </p> -->
             
           
         </div>
         <p class="fecha">
-            7 de abril del 96
+            {{postSingle.date}}
         </p>
    
     </div>

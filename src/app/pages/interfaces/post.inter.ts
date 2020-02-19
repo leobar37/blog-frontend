@@ -4,9 +4,10 @@
   id : string,
   title :string,
   body:string,
-  extracto:string,
+  extracto?:string,
   autor :string,
   date : string,
+  keywords? : string[]
 
 }
 

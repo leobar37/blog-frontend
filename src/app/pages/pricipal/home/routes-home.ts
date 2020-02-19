@@ -4,7 +4,7 @@ import { PostsComponent } from './posts/posts.component';
 
 
 export const routesHome: Routes = [
-    {path:'post' , component : SingleComponent},
+    {path:'post/:id' , component : SingleComponent},
     {path : 'posts' , component : PostsComponent},
     {path : '**' , pathMatch : 'full' ,  redirectTo : 'home'}
 ];

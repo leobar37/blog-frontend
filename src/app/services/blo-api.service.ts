@@ -11,9 +11,20 @@ export class BloApiService {
 
   getPosts(){
      return this.http.get(`${this.uri}/entrada/listar`).pipe( map ( data =>{
-           
        return data['docs'];
-
+     }));
+  }
+  getPost(id :string){
+    // let params = new HttpParams()
+    // .set('id' , id );
+     return this.http.get(`${this.uri}/entrada/${id}`)
+     .pipe(map(data =>{
+          if(!data['ok']){
+            return data;
+          }else{
+            return data['entrada'];
+          }
+          
      }));
   }
 }
